@@ -18,17 +18,11 @@ dependencies = [
     "statsmodels>=0.14.5",
 ]
 
+
 [tool.ruff]
 extend-include = ["*.ipynb"]
-
-[tool.ruff.format]
-quote-style = "single"
-
-[tool.ruff.lint]
+extend-ignore = ["F401"] # won't delete unused imports, but this ignore should eventually be removed
 extend-select = ["E501", "W", "N", "R", "I"]
 
-# I want it to ignore F401 because that will delete unused library imports
-# Annoying if Ruff runs on file save (if you haven't had a 
-# chance to use the library yet.
-[tool.ruff]
-ignore = ["F401"]
+[tool.ruff.format]
+quote-style = "single" 
