@@ -3,6 +3,10 @@
 cursor_running_fmri_decoding_and_mvpa_a.md
 delay_geometry_analysis.py
 
+# Where Jeanette stores her works in progress
+jeanette_dev_code/
+
+
 # MacOS metadata files
 .DS_Store
 
@@ -44,3 +48,4 @@ ruff_cache/
 *.log
 *.tmp
 *.bak
+
